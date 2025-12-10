@@ -126,6 +126,7 @@ function updateFootnotes() {
     
   h_align = final_props['HORIZONTAL_ALIGNMENT'];
   delete final_props['HORIZONTAL_ALIGNMENT'];
+  delete final_props['HEADING'];
 
   if (h_align) {
     final_props[DocumentApp.Attribute.HORIZONTAL_ALIGNMENT] =
